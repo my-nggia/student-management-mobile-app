@@ -85,14 +85,13 @@ public class MainActivityStudent extends AppCompatActivity {
                               Toast.makeText(MainActivityStudent.this, "<-><-><->"+d.get("email").toString(), Toast.LENGTH_SHORT).show();
 
                                // query document có field "email" = email của người dùng
-//                               if (email.equalsIgnoreCase(d.get("email").toString())) {
-//                                   Toast.makeText(MainActivityStudent.this, "<><><>"+d.get("email").toString(), Toast.LENGTH_SHORT).show();
-//                                   Student std = d.toObject(Student.class);
-//                                   // set Text view
-//                                   displayOnScreen(std);
-//                               }
-//                               Toast.makeText(MainActivityStudent.this, "<-><-><->"+d.get("email").toString(), Toast.LENGTH_SHORT).show();
-//                               break;
+                              if (email.equalsIgnoreCase(d.get("email").toString())) {
+                                  Toast.makeText(MainActivityStudent.this, "<><><>"+d.get("email").toString(), Toast.LENGTH_SHORT).show();
+                                  Student std = d.toObject(Student.class);
+                                  // set Text view
+                                  displayOnScreen(std);
+                                  break;
+                              }
                            }
                        } else {
                             // if the snapshot is empty we are displaying a toast message.
