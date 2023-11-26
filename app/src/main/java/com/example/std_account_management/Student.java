@@ -4,10 +4,7 @@ public class Student {
 
     private String name, phone, status, password, email;
     private int age;
-    public Student(){
-
-    }
-
+    public Student () {}
     public Student(String email, String name, int age, String phone, String status, String password) {
         this.email = email;
         this.name = name;
@@ -35,4 +32,16 @@ public class Student {
     public void setStatus(String status) {this.status = status;}
     public void setAge(int age) {this.age = age;}
     public void setPass(String pass) {this.password = pass;}
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", status='" + status + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
