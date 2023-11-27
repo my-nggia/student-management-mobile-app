@@ -131,12 +131,12 @@ public class ManagerActivity extends AppCompatActivity implements AdapterView.On
                 exportStudentList();
                 break;
             case R.id.import_certificate_list:
-                readCertificateFile();
+//                readCertificateFile();
                 Toast.makeText(ManagerActivity.this, "Import Certificate List", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.export_certificate_list:
                 Toast.makeText(ManagerActivity.this, "Export Certificate List", Toast.LENGTH_SHORT).show();
-                exportCertificateList();
+//                exportCertificateList();
                 break;
         }
         return true;
@@ -145,6 +145,10 @@ public class ManagerActivity extends AppCompatActivity implements AdapterView.On
     // IMPORT
 
     // Flow: Read Student List (CSV) -> Send to Database -> Toast
+    // readStudentFile()
+    // -> Tutorial link:
+    // 01. https://www.youtube.com/watch?v=i-TqNzUryn8
+    // 02. https://www.youtube.com/watch?v=J6azVvt-9KE
     private void readStudentFile() {
         CollectionReference studentsRef = DB.collection("students");
         studentsRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
@@ -173,37 +177,36 @@ public class ManagerActivity extends AppCompatActivity implements AdapterView.On
     }
 
     // Flow: Read Certificate List -> Send to Database (Document name: certificate) -> Toast
-//    ArrayList<Student> import_student_list = new ArrayList<>();
-    private void readCertificateFile() {
-        CollectionReference certificatesRef = DB.collection("certificate");
-
-        certificatesRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                if (!queryDocumentSnapshots.isEmpty()) {
-                    for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
-                        // Convert DocumentSnapshot thành đối tượng Certificate
-                        Certificate certificate = documentSnapshot.toObject(Certificate.class);
-
-                        // Lấy thông tin từ đối tượng Certificate
-                        String certificateName = certificate.getCertificate_name();
-                        String stdEmail = certificate.getStd_email();
-
-                        // Gọi hàm sendCertificateInfoToDB với thông tin từ Certificate
-                        sendCertificateInfoToDB(certificateName, stdEmail);
-                    }
-                } else {
-                    Toast.makeText(ManagerActivity.this, "No certificate data found in Database", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.e("ReadCertificateFile", "Error reading certificate data", e);
-                Toast.makeText(ManagerActivity.this, "Failed to read certificate data", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+//    private void readCertificateFile() {
+//        CollectionReference certificatesRef = DB.collection("certificate");
+//
+//        certificatesRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+//            @Override
+//            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+//                if (!queryDocumentSnapshots.isEmpty()) {
+//                    for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
+//                        // Convert DocumentSnapshot thành đối tượng Certificate
+//                        Certificate certificate = documentSnapshot.toObject(Certificate.class);
+//
+//                        // Lấy thông tin từ đối tượng Certificate
+//                        String certificateName = certificate.getCertificate_name(); [BUG]
+//                        String stdEmail = certificate.getStd_email(); // [BUG]
+//
+//                        // Gọi hàm sendCertificateInfoToDB với thông tin từ Certificate
+//                        sendCertificateInfoToDB(certificateName, stdEmail);
+//                    }
+//                } else {
+//                    Toast.makeText(ManagerActivity.this, "No certificate data found in Database", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//                Log.e("ReadCertificateFile", "Error reading certificate data", e);
+//                Toast.makeText(ManagerActivity.this, "Failed to read certificate data", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
 
     private int calculateAge(String year) {
         Calendar cal = Calendar.getInstance();
@@ -232,24 +235,24 @@ public class ManagerActivity extends AppCompatActivity implements AdapterView.On
         });
     }
 
-    private void sendCertificateInfoToDB(String certificate_name, String std_email) {
-        Certificate certificate = new Certificate(std_email, certificate_name);
-
-        CollectionReference dbCertificates = DB.collection("certificate");
-
-        dbCertificates.add(certificate).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(ManagerActivity.this, "Add Certificate Successfully", Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(ManagerActivity.this, "Fail to add \n" + e, Toast.LENGTH_SHORT).show();
-                // Xử lý khi thêm thông tin chứng chỉ thất bại
-            }
-        });
-    }
+//    private void sendCertificateInfoToDB(String certificate_name, String std_email) {
+//        Certificate certificate = new Certificate(std_email, certificate_name); // [BUG]
+//
+//        CollectionReference dbCertificates = DB.collection("certificate");
+//
+//        dbCertificates.add(certificate).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+//            @Override
+//            public void onSuccess(DocumentReference documentReference) {
+//                Toast.makeText(ManagerActivity.this, "Add Certificate Successfully", Toast.LENGTH_SHORT).show();
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//                Toast.makeText(ManagerActivity.this, "Fail to add \n" + e, Toast.LENGTH_SHORT).show();
+//                // Xử lý khi thêm thông tin chứng chỉ thất bại
+//            }
+//        });
+//    }
 
     // EXPORT
 
@@ -307,37 +310,37 @@ public class ManagerActivity extends AppCompatActivity implements AdapterView.On
         });
     }
 
-    private void exportCertificateList() {
-        CollectionReference certificatesRef = DB.collection("certificate");
-
-        certificatesRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                if (!queryDocumentSnapshots.isEmpty()) {
-                    StringBuilder csvData = new StringBuilder();
-                    for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
-                        Certificate certificate = documentSnapshot.toObject(Certificate.class);
-                        // Tạo chuỗi CSV từ dữ liệu chứng chỉ
-                        String certificateData = certificate.getCertificate_name() + "," +
-                                certificate.getStd_email() + "\n";
-
-                        // Thêm dữ liệu chứng chỉ vào chuỗi CSV
-                        csvData.append(certificateData);
-                    }
-                    // Gọi hàm ghi dữ liệu CSV vào tệp
-                    writeDataToCSV(csvData.toString(), "certificate_list.csv");
-                } else {
-                    Toast.makeText(ManagerActivity.this, "No certificate data found in Database", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.e("ExportCertificateList", "Error exporting certificate data", e);
-                Toast.makeText(ManagerActivity.this, "Failed to export certificate data", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+//    private void exportCertificateList() {
+//        CollectionReference certificatesRef = DB.collection("certificate");
+//
+//        certificatesRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+//            @Override
+//            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+//                if (!queryDocumentSnapshots.isEmpty()) {
+//                    StringBuilder csvData = new StringBuilder();
+//                    for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
+//                        Certificate certificate = documentSnapshot.toObject(Certificate.class);
+//                        // Tạo chuỗi CSV từ dữ liệu chứng chỉ
+//                        String certificateData = certificate.getCertificate_name() + "," +
+//                                certificate.getStd_email() + "\n"; // [BUG]
+//
+//                        // Thêm dữ liệu chứng chỉ vào chuỗi CSV
+//                        csvData.append(certificateData);
+//                    }
+//                    // Gọi hàm ghi dữ liệu CSV vào tệp
+//                    writeDataToCSV(csvData.toString(), "certificate_list.csv");
+//                } else {
+//                    Toast.makeText(ManagerActivity.this, "No certificate data found in Database", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//                Log.e("ExportCertificateList", "Error exporting certificate data", e);
+//                Toast.makeText(ManagerActivity.this, "Failed to export certificate data", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
 
     // Hàm này để ghi dữ liệu CSV vào tệp
     private void writeDataToCSV(String data, String fileName) {
