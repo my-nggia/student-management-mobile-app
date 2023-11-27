@@ -31,11 +31,14 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class ManagerActivity extends AppCompatActivity {
@@ -97,15 +100,84 @@ public class ManagerActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_add:
-                Toast.makeText(ManagerActivity.this, "Add New Stduent", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ManagerActivity.this, "Add A New Student", Toast.LENGTH_SHORT).show();
                 Intent addStd = new Intent(ManagerActivity.this, AddStudentActivity.class);
                 startActivity(addStd);
+                break;
+            case R.id.import_student_list:
+                Toast.makeText(ManagerActivity.this, "Import Student List", Toast.LENGTH_SHORT).show();
+                readStudentFile();
+                break;
+            case R.id.export_student_list:
+                Toast.makeText(ManagerActivity.this, "Export Student List", Toast.LENGTH_SHORT).show();
+                exportStudentList();
+                break;
+            case R.id.import_certificate_list:
+                readCertificateFile();
+                Toast.makeText(ManagerActivity.this, "Import Certificate List", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.export_certificate_list:
+                Toast.makeText(ManagerActivity.this, "Export Certificate List", Toast.LENGTH_SHORT).show();
+                exportCertificateList();
                 break;
         }
         return true;
     }
 
+    // IMPORT
+
+    // Flow: Read Student List (CSV) -> Send to Database -> Toast
+    ArrayList<Student> import_student_list = new ArrayList<>();
+    private void readStudentFile() {
+        // Code
 
 
+        // Sau khi đọc thành công -> for loop cho từng student trong mảng import_student_list
+        // -> gọi hàm sendUserInfoToDB (có code sẵn bên dưới)
+    }
 
+    // Flow: Read Certificate List -> Send to Database (Document name: certificate) -> Toast
+    private void readCertificateFile() {
+        // Code (Đọc file)
+
+        // Tạo Certificate.java
+        // Tạo mảng import_certificate_list: ArrayList<Certificate> import_certificate_list = new ArrayList<>();
+        // Đọc thành công -> for loop cho từng certificate trong mảng import_certificate_list
+        // -> gọi hàm sendCertificateInfoToDB (chưa có code sẵn / giống như sendUserInfoToDB )
+    }
+
+    private int calculateAge(String year) {
+        Calendar cal = Calendar.getInstance();
+        int yearNow = cal.get(Calendar.YEAR);
+        return yearNow - Integer.parseInt(year);
+    }
+
+    private void sendUserInfoToDB(String email, String pass, String name, String phone, String birthday) {
+        String[] a = birthday.split("/", -2);
+        int age = calculateAge(a[2]); // tuổi
+
+        CollectionReference dbStudents = DB.collection("student");
+        Student std = new Student(email, name, age, phone, "normal", pass);
+
+        dbStudents.add(std).addOnSuccessListener(new OnSuccessListener<DocumentReference>(){
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(ManagerActivity.this, "Add Student Successfully", Toast.LENGTH_SHORT).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(ManagerActivity.this, "Fail to add \n" + e, Toast.LENGTH_SHORT).show();
+                // Add thất bại
+            }
+        });
+    }
+
+    // EXPORT
+
+    private void exportStudentList() {
+    }
+
+    private void exportCertificateList() {
+    }
 }

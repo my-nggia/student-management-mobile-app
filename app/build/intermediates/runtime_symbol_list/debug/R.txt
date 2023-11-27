@@ -3280,6 +3280,8 @@ int id enterAlwaysCollapsed 0x7f0800b8
 int id exitUntilCollapsed 0x7f0800b9
 int id expand_activities_button 0x7f0800ba
 int id expanded_menu 0x7f0800bb
+int id export_certificate_list 0x7f080212
+int id export_student_list 0x7f080213
 int id fade 0x7f0800bc
 int id fill 0x7f0800bd
 int id fill_horizontal 0x7f0800be
@@ -3319,6 +3321,8 @@ int id ignore 0x7f0800df
 int id ignoreRequest 0x7f0800e0
 int id image 0x7f0800e1
 int id immediateStop 0x7f0800e2
+int id import_certificate_list 0x7f080214
+int id import_student_list 0x7f080215
 int id included 0x7f0800e3
 int id indeterminate 0x7f0800e4
 int id info 0x7f0800e5

@@ -5,7 +5,35 @@
         android:id="@+id/menu_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Add"
+        android:title="Add A New Student"
+        />
+
+    <item
+        android:id="@+id/import_student_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Import Student List"
+        />
+
+    <item
+        android:id="@+id/export_student_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Export Student List"
+        />
+
+    <item
+        android:id="@+id/import_certificate_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Import Certificate List"
+        />
+
+    <item
+        android:id="@+id/export_certificate_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Export Certificate List"
         />
 
 </menu>
