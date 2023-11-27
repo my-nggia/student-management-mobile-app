@@ -22,11 +22,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -40,12 +42,17 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.security.cert.Certificate;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class ManagerActivity extends AppCompatActivity {
+public class ManagerActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     ArrayList<Student> studentsList = new ArrayList<>();
+    String[] listSorting = new String[]{"Sorting by age","Sorting by name from A to Z", "Sorting by name from Z to A" };
+    Spinner spinner;
     int default_img = R.drawable.user_img_default;
     private FirebaseFirestore DB;
+    StudentRecyclerViewAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,10 +63,17 @@ public class ManagerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Spinner sorting
+        spinner = findViewById(R.id.spinner);
+        // Adapter for spinner sorting
+        ArrayAdapter<String> adapterSpinner = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, listSorting);
+        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapterSpinner);
+        spinner.setOnItemSelectedListener(this);
 
         // Recycler View
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
-        StudentRecyclerViewAdapter adapter = new StudentRecyclerViewAdapter(this, studentsList);
+        adapter = new StudentRecyclerViewAdapter(this, studentsList);
         recyclerView.setAdapter(adapter);
 
         // Lấy dữ liệu từ database, lưu vào studentsList
@@ -202,5 +216,47 @@ public class ManagerActivity extends AppCompatActivity {
     }
 
     private void exportCertificateList() {
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String citeria = parent.getItemAtPosition(position).toString();
+        sortingListStudent(citeria);
+    }
+
+    private void sortingListStudent(String citeria) {
+        if(citeria.equals("Sorting by age")) {
+            Collections.sort(studentsList, new Comparator<Student>() {
+                @Override
+                public int compare(Student o1, Student o2) {
+                    return Integer.compare(o1.getAge(), o2.getAge());
+                }
+            });
+            Toast.makeText(this, "Sorting by age", Toast.LENGTH_SHORT).show();
+        }
+        else if( citeria.equals("Sorting by name from A to Z")) {
+            Collections.sort(studentsList, new Comparator<Student>() {
+                @Override
+                public int compare(Student o1, Student o2) {
+                    return o1.getName().compareToIgnoreCase(o2.getName());
+                }
+            });
+            Toast.makeText(this, "Sorting by name from A to Z", Toast.LENGTH_SHORT).show();
+        }
+        else if( citeria.equals("Sorting by name from Z to A")) {
+            Collections.sort(studentsList, new Comparator<Student>() {
+                @Override
+                public int compare(Student o1, Student o2) {
+                    return o2.getName().compareToIgnoreCase(o1.getName());
+                }
+            });
+            Toast.makeText(this, "Sorting by name from Z to A", Toast.LENGTH_SHORT).show();
+        }
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
