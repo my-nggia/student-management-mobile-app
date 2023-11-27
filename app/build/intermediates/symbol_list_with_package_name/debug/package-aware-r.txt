@@ -3162,10 +3162,12 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id ad_recycler_view
 id add
 id add_btn
 id adjust_height
 id adjust_width
+id admin_toolbar
 id alertTitle
 id aligned
 id all
@@ -3282,7 +3284,9 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id export_certificate_list
+id export_certificate_list_ad
 id export_student_list
+id export_student_list_ad
 id fade
 id fill
 id fill_horizontal
@@ -3323,7 +3327,9 @@ id ignoreRequest
 id image
 id immediateStop
 id import_certificate_list
+id import_certificate_list_ad
 id import_student_list
+id import_student_list_ad
 id included
 id indeterminate
 id info
@@ -3373,6 +3379,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id menu_add
+id menu_add_ad
 id message
 id middle
 id mini
@@ -3586,7 +3593,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
-id toolbar_admin
+id toolbar_for_admin
 id top
 id topPanel
 id touch_outside
@@ -3826,6 +3833,7 @@ layout support_simple_spinner_dropdown_item
 layout toolbar
 layout toolbar_for_admin
 menu toolbar_menu
+menu toolbar_menu_ad
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

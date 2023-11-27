@@ -37,6 +37,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.security.cert.Certificate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -175,7 +176,29 @@ public class ManagerActivity extends AppCompatActivity {
 
     // EXPORT
 
+    // Flow:
+    // Lấy data từ DB về (hàm getStudentDataFromDB, getCertificateDataFromDB)
+    // Write to file (Tutorial link: https://www.w3schools.com/java/java_files_create.asp)
+    // -> exportStudentList, exportCertificateList
+
+    private ArrayList<Student> getStudentDataFromDB() {
+        ArrayList<Student> dbStudentList = new ArrayList<>();
+        // Code
+
+        return dbStudentList;
+    }
+
+    private ArrayList<Certificate> getCertificateFromDB() {
+         ArrayList<Certificate> dbCertificateList = new ArrayList<>();
+         // Code
+
+         return dbCertificateList;
+    }
+
+    // WRITE TO FILE (EXPORT)
+    // Tutorial link: https://www.w3schools.com/java/java_files_create.asp
     private void exportStudentList() {
+
     }
 
     private void exportCertificateList() {

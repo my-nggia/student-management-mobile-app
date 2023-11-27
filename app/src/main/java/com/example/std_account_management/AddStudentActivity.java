@@ -68,12 +68,10 @@ public class AddStudentActivity extends AppCompatActivity {
 
                 // kiểm tra thông tin được nhập đủ
                 if(!isEmptyField(userEmail, userPass, userName, userPhoneNum, userBirthday)) {
-                    Toast.makeText(AddStudentActivity.this, "Đã nhập đủ", Toast.LENGTH_SHORT).show();
                     // kiểm tra:
                     // 1. email đã đúng chưa
                     // 2. số điện thoại
                     if (emailValidator(userEmail) && phoneNumberValidator(userPhoneNum)) {
-                        Toast.makeText(AddStudentActivity.this, "Email + SĐT Hợp lệ, Send DB", Toast.LENGTH_SHORT).show();
                         sendUserInfoToDB(userEmail, userPass, userName, userPhoneNum, userBirthday); // Gửi dữ liệu lên database
                     }
                 }
@@ -135,8 +133,8 @@ public class AddStudentActivity extends AppCompatActivity {
                 Toast.makeText(AddStudentActivity.this, "Add Student Successfully", Toast.LENGTH_SHORT).show();
                 // Add thành công, chuyển sang về ManagerActivity
                 try {
-                    Intent admin_activity = new Intent(AddStudentActivity.this, AdminActivity.class);
-                    startActivity(admin_activity);
+                    Intent manager_activity = new Intent(AddStudentActivity.this, ManagerActivity.class);
+                    startActivity(manager_activity);
                 } catch (Exception e) {
                     Toast.makeText(AddStudentActivity.this, "!!!! " + e.toString(), Toast.LENGTH_SHORT).show();
                 }

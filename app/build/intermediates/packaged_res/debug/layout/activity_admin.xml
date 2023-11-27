@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ManagerActivity"
+    tools:context=".AdminActivity"
     android:background="@color/black">
 
-    <include
-        android:id="@+id/toolbar_admin"
-        layout="@layout/toolbar_for_admin"
-        />
+    <include layout="@layout/toolbar_for_admin"
+        android:id="@+id/admin_toolbar"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/my_recycler_view"
+        android:id="@+id/ad_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="?attr/actionBarSize"/>
