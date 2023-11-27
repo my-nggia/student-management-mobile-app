@@ -149,32 +149,32 @@ public class ManagerActivity extends AppCompatActivity implements AdapterView.On
     // -> Tutorial link:
     // 01. https://www.youtube.com/watch?v=i-TqNzUryn8
     // 02. https://www.youtube.com/watch?v=J6azVvt-9KE
-    private void readStudentFile() {
-        CollectionReference studentsRef = DB.collection("students");
-        studentsRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                if (!queryDocumentSnapshots.isEmpty()) {
-                    for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
-                        // Convert mỗi DocumentSnapshot thành đối tượng Student
-                        Student student = documentSnapshot.toObject(Student.class);
-                        // Thêm sinh viên vào danh sách hoặc xử lý dữ liệu theo ý muốn
-                        studentsList.add(student);
-                    }
-                    // Cập nhật RecyclerView hoặc giao diện người dùng sau khi có dữ liệu mới
-                    adapter.notifyDataSetChanged();
-                } else {
-                    Toast.makeText(ManagerActivity.this, "No data found in Database", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.e("ReadStudentFile", "Error reading student data", e);
-                Toast.makeText(ManagerActivity.this, "Failed to read student data", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+    // private void readStudentFile() {
+    //     CollectionReference studentsRef = DB.collection("students");
+    //     studentsRef.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+    //         @Override
+    //         public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+    //             if (!queryDocumentSnapshots.isEmpty()) {
+    //                 for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
+    //                     // Convert mỗi DocumentSnapshot thành đối tượng Student
+    //                     Student student = documentSnapshot.toObject(Student.class);
+    //                     // Thêm sinh viên vào danh sách hoặc xử lý dữ liệu theo ý muốn
+    //                     studentsList.add(student);
+    //                 }
+    //                 // Cập nhật RecyclerView hoặc giao diện người dùng sau khi có dữ liệu mới
+    //                 adapter.notifyDataSetChanged();
+    //             } else {
+    //                 Toast.makeText(ManagerActivity.this, "No data found in Database", Toast.LENGTH_SHORT).show();
+    //             }
+    //         }
+    //     }).addOnFailureListener(new OnFailureListener() {
+    //         @Override
+    //         public void onFailure(@NonNull Exception e) {
+    //             Log.e("ReadStudentFile", "Error reading student data", e);
+    //             Toast.makeText(ManagerActivity.this, "Failed to read student data", Toast.LENGTH_SHORT).show();
+    //         }
+    //     });
+    // }
 
     // Flow: Read Certificate List -> Send to Database (Document name: certificate) -> Toast
 //    private void readCertificateFile() {
