@@ -7,10 +7,15 @@
     tools:context=".ManagerActivity"
     android:background="@color/black">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:paddingTop="?attr/actionBarSize"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

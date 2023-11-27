@@ -1,11 +1,23 @@
 [
     {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_add_dialog_cinder_border_top_left_top_right.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/add_dialog_cinder_border_top_left_top_right.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_person.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_person.xml"
+    },
+    {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-anydpi_ic_launcher_round.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_add_student_activity.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/add_student_activity.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -28,8 +40,24 @@
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/custom_input.xml"
     },
     {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_toolbar.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/toolbar.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_toolbar_for_admin.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/toolbar_for_admin.xml"
+    },
+    {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_email.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_email.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_btn_dialog_custom.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/btn_dialog_custom.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_phone.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_phone.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -52,12 +80,20 @@
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_add_student_activity.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/add_student_activity.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_add_dialog_feedback.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/add_dialog_feedback.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_lock_24.xml.flat",
@@ -80,12 +116,12 @@
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/activity_main.xml"
     },
     {
-        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_activity_admin.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/activity_admin.xml"
     },
     {
-        "merged": "com.example.std_account_management.app-merged_res-35:/layout_student_card_row.xml.flat",
-        "source": "com.example.std_account_management.app-main-37:/layout/student_card_row.xml"
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
@@ -94,6 +130,14 @@
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_activity_student.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/activity_student.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/menu_toolbar_menu.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/menu/toolbar_menu.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_add_dialog_bg_light_dark_corner.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/add_dialog_bg_light_dark_corner.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_student_card_row.xml.flat",
@@ -106,6 +150,10 @@
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_img_radius_8dp.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/img_radius_8dp.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_calendar.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_calendar.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_activity_manager.xml.flat",
