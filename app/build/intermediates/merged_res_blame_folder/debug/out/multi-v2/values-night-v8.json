@@ -4,24 +4,7 @@
             "outputFile": "com.example.std_account_management.app-mergeDebugResources-33:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/gia-my-ng/.gradle/caches/transforms-3/ff92050ab482929c4d0f044d21af76fb/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "6,7,8,9,10,11,12,38",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "183,253,337,421,517,619,721,3576",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "248,332,416,512,614,716,810,3660"
-                    }
-                },
-                {
-                    "source": "/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/res/values-night/themes.xml",
+                    "source": "/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -37,6 +20,23 @@
                         "endLines": "5",
                         "endColumns": "12",
                         "endOffsets": "178"
+                    }
+                },
+                {
+                    "source": "/home/gia-my-ng/.gradle/caches/transforms-3/ff92050ab482929c4d0f044d21af76fb/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,38",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "183,253,337,421,517,619,721,3576",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "248,332,416,512,614,716,810,3660"
                     }
                 },
                 {

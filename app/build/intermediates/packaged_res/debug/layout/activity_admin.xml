@@ -10,10 +10,4 @@
     <include layout="@layout/toolbar_for_admin"
         android:id="@+id/admin_toolbar"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/ad_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="?attr/actionBarSize"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

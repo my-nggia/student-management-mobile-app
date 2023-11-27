@@ -2961,8 +2961,10 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_calendar
 drawable baseline_email
+drawable baseline_groups
 drawable baseline_lock_24
 drawable baseline_person
+drawable baseline_person_add_white
 drawable baseline_phone
 drawable border_radius_8dp_textview
 drawable btn_checkbox_checked_mtrl
@@ -3162,9 +3164,9 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
-id ad_recycler_view
 id add
 id add_btn
+id add_std_admin
 id adjust_height
 id adjust_width
 id admin_toolbar
@@ -3283,10 +3285,10 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id export_cert_list_admin
 id export_certificate_list
-id export_certificate_list_ad
+id export_std_list_admin
 id export_student_list
-id export_student_list_ad
 id fade
 id fill
 id fill_horizontal
@@ -3326,10 +3328,10 @@ id ignore
 id ignoreRequest
 id image
 id immediateStop
+id import_cert_list_admin
 id import_certificate_list
-id import_certificate_list_ad
+id import_std_list_admin
 id import_student_list
-id import_student_list_ad
 id included
 id indeterminate
 id info
@@ -3379,7 +3381,6 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id menu_add
-id menu_add_ad
 id message
 id middle
 id mini
@@ -3526,6 +3527,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -3593,7 +3595,6 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
-id toolbar_for_admin
 id top
 id topPanel
 id touch_outside
@@ -3613,6 +3614,7 @@ id useLogo
 id user_img
 id username_std
 id vertical_only
+id view_all_std_admin
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3833,7 +3835,6 @@ layout support_simple_spinner_dropdown_item
 layout toolbar
 layout toolbar_for_admin
 menu toolbar_menu
-menu toolbar_menu_ad
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

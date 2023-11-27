@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:5:5-67
-11-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:5:22-64
+11-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:6:5-79
-12-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:6:22-76
+12-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:6:5-79
+12-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:6:22-76
 13
 14    <permission
 14-->[androidx.core:core:1.9.0] /home/gia-my-ng/.gradle/caches/transforms-3/45dba061abe1e5d647d9f295032bd2d4/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
@@ -27,83 +27,83 @@
 18-->[androidx.core:core:1.9.0] /home/gia-my-ng/.gradle/caches/transforms-3/45dba061abe1e5d647d9f295032bd2d4/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:8:5-56:19
+20-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:8:5-56:19
 21        android:allowBackup="true"
-21-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:9:9-35
+21-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.9.0] /home/gia-my-ng/.gradle/caches/transforms-3/45dba061abe1e5d647d9f295032bd2d4/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:10:9-65
+23-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:10:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:11:9-54
+26-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:11:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:12:9-43
+27-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:12:9-43
 28        android:label="@string/app_name"
-28-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:13:9-41
+28-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:13:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:14:9-54
+29-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:14:9-54
 30        android:supportsRtl="true"
-30-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:15:9-35
+30-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:15:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.Stdaccountmanagement" >
-32-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:16:9-58
+32-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:16:9-58
 33        <activity
-33-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:18:9-22:20
+33-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:18:9-26:20
 34            android:name="com.example.std_account_management.ManagerActivity"
-34-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:19:13-44
+34-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:19:13-44
 35            android:exported="true" >
-35-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:20:13-36
-36        </activity>
-37        <activity
-37-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:24:9-31:20
-38            android:name="com.example.std_account_management.AdminActivity"
-38-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:24:19-48
-39            android:exported="true" >
-39-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:25:13-36
-40            <intent-filter>
-40-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:26:13-30:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:27:17-69
-41-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:27:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:29:17-77
-43-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:29:27-74
-44            </intent-filter>
+35-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:20:13-36
+36            <intent-filter>
+36-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:21:13-25:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:22:17-69
+37-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:22:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:24:17-77
+39-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:24:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:28:9-31:20
+43            android:name="com.example.std_account_management.AdminActivity"
+43-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:28:19-48
+44            android:exported="true" >
+44-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:29:13-36
 45        </activity>
 46
 47        <!--  -->
 48
 49        <activity
-49-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:35:9-39:20
+49-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:35:9-39:20
 50            android:name="com.example.std_account_management.StudentActivity"
-50-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:36:13-44
+50-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:36:13-44
 51            android:exported="true" >
-51-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:37:13-36
+51-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:37:13-36
 52        </activity>
 53        <activity
-53-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:41:9-45:20
+53-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:41:9-45:20
 54            android:name="com.example.std_account_management.AddStudentActivity"
-54-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:42:13-47
+54-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:42:13-47
 55            android:exported="true" >
-55-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:43:13-36
+55-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:43:13-36
 56        </activity>
 57        <activity
-57-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:47:9-51:20
+57-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:47:9-51:20
 58            android:name="com.example.std_account_management.SignIn"
-58-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:48:13-35
+58-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:48:13-35
 59            android:exported="true" >
-59-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:49:13-36
+59-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:49:13-36
 60        </activity>
 61        <!--  -->
 62        <activity
-62-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:53:9-55:39
+62-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:53:9-55:39
 63            android:name="com.example.std_account_management.MainActivity"
-63-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:54:13-41
+63-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:54:13-41
 64            android:exported="true" />
-64-->/home/gia-my-ng/AndroidStudioProjects/students-management/app/src/main/AndroidManifest.xml:55:13-36
+64-->/home/gia-my-ng/AndroidStudioProjects/std-mg/student-management-mobile-app/app/src/main/AndroidManifest.xml:55:13-36
 65
 66        <service
 66-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:14:9-23:19
