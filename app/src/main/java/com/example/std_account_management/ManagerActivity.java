@@ -1,13 +1,32 @@
 package com.example.std_account_management;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AlertDialogLayout;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -29,10 +48,13 @@ public class ManagerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_manager);
         DB = FirebaseFirestore.getInstance();
 
+        // Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
 
+        // Recycler View
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
-
         StudentRecyclerViewAdapter adapter = new StudentRecyclerViewAdapter(this, studentsList);
         recyclerView.setAdapter(adapter);
 
@@ -62,4 +84,28 @@ public class ManagerActivity extends AppCompatActivity {
             }
         });
     }
+
+    // Menu for toolbar
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_add:
+                Toast.makeText(ManagerActivity.this, "Add New Stduent", Toast.LENGTH_SHORT).show();
+                Intent addStd = new Intent(ManagerActivity.this, AddStudentActivity.class);
+                startActivity(addStd);
+                break;
+        }
+        return true;
+    }
+
+
+
+
 }
