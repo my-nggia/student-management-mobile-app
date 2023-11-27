@@ -1,15 +1,11 @@
 [
     {
-        "merged": "com.example.std_account_management.app-merged_res-35:/menu_toolbar_menu.xml.flat",
-        "source": "com.example.std_account_management.app-main-37:/menu/toolbar_menu.xml"
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_add_dialog_cinder_border_top_left_top_right.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/add_dialog_cinder_border_top_left_top_right.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_person.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_person.xml"
-    },
-    {
-        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_add_dialog_cinder_border_top_left_top_right.xml.flat",
-        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/add_dialog_cinder_border_top_left_top_right.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-anydpi_ic_launcher_round.xml.flat",
@@ -38,6 +34,10 @@
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_custom_input.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/custom_input.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/menu_toolbar_menu_ad.xml.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/menu/toolbar_menu_ad.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_toolbar.xml.flat",
@@ -82,6 +82,10 @@
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_add_student_activity.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/add_student_activity.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_toolbar_for_admin.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/toolbar_for_admin.xml"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_add_dialog_feedback.xml.flat",
