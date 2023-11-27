@@ -3281,6 +3281,8 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id export_certificate_list
+id export_student_list
 id fade
 id fill
 id fill_horizontal
@@ -3320,6 +3322,8 @@ id ignore
 id ignoreRequest
 id image
 id immediateStop
+id import_certificate_list
+id import_student_list
 id included
 id indeterminate
 id info
