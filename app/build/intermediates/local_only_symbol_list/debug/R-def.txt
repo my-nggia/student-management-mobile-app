@@ -14,9 +14,14 @@ drawable baseline_lock_24
 drawable baseline_person
 drawable baseline_person_add_white
 drawable baseline_phone
+drawable bg_fire_orange_corner_10
+drawable bg_white_c_10dp
+drawable bg_white_corner_10
 drawable border_radius_8dp_textview
 drawable btn_dialog_custom
 drawable custom_input
+drawable dialog_bg
+drawable dialog_bg_fire_orange_16_top_left_right
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable img_radius_8dp
@@ -24,6 +29,7 @@ drawable manager_dashboard
 drawable user_img_default
 id add_btn
 id admin_toolbar
+id age_update
 id back_home_screen
 id cancel_add_btn
 id date_tv
@@ -42,9 +48,11 @@ id menu_view_students
 id my_app_bar
 id my_recycler_view
 id name_sign_up
+id name_update
 id password_sign_in
 id password_sign_up
 id phone_sign_up
+id phone_update
 id sign_in_btn
 id spinner
 id std_age
@@ -63,9 +71,12 @@ id std_phone_card
 id std_phone_view
 id std_status_card
 id std_status_view
+id update_btn
+id update_cancel_btn
 id user_img
 id username_std
 layout activity_admin
+layout activity_dialog_fragment
 layout activity_main
 layout activity_manager
 layout activity_sign_in

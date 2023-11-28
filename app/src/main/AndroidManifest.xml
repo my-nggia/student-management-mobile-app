@@ -16,6 +16,12 @@
         android:theme="@style/Theme.Stdaccountmanagement"
         tools:targetApi="31">
         <activity
+            android:name=".DialogFragment"
+            android:exported="false" />
+        <activity
+            android:name=".update_student_info_dialog"
+            android:exported="false" />
+        <activity
             android:name=".ViewStudentAdminManager"
             android:exported="false" />
         <activity
