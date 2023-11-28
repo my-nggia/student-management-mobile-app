@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:2:1-56:12
 MERGED from [com.google.android.material:material:1.10.0] /home/gia-my-ng/.gradle/caches/transforms-3/d49ec510c338e4b25b77263b6d755eb1/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/gia-my-ng/.gradle/caches/transforms-3/afb5814eccbd68069e5bd6389ce2ce7a/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/aa077958169644c5612c6abffae10edf/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -82,8 +82,8 @@ MERGED from [io.grpc:grpc-android:1.52.1] /home/gia-my-ng/.gradle/caches/transfo
 	android:name
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:8:5-48:19
-INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:8:5-48:19
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:8:5-54:19
+INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:8:5-54:19
 MERGED from [com.google.android.material:material:1.10.0] /home/gia-my-ng/.gradle/caches/transforms-3/d49ec510c338e4b25b77263b6d755eb1/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] /home/gia-my-ng/.gradle/caches/transforms-3/d49ec510c338e4b25b77263b6d755eb1/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/gia-my-ng/.gradle/caches/transforms-3/afb5814eccbd68069e5bd6389ce2ce7a/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -138,64 +138,76 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/gia-my-ng/.gradle/cac
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:16:9-58
 	android:dataExtractionRules
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:10:9-65
-activity#com.example.std_account_management.ViewStudentAdminManager
+activity#com.example.std_account_management.DialogFragment
 ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:19:13-52
-activity#com.example.std_account_management.ViewAllStudents
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:19:13-43
+activity#com.example.std_account_management.update_student_info_dialog
 ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:22:13-44
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:22:13-55
+activity#com.example.std_account_management.ViewStudentAdminManager
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:25:13-52
+activity#com.example.std_account_management.ViewAllStudents
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:28:13-44
 activity#com.example.std_account_management.ManagerActivity
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:24:9-26:39
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:30:9-32:39
 	android:exported
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:26:13-36
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:25:13-44
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:31:13-44
 activity#com.example.std_account_management.AdminActivity
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:27:9-35:20
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:33:9-41:20
 	android:exported
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:28:13-42
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:34:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:30:13-34:29
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:31:17-69
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:33:17-77
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:39:27-74
 activity#com.example.std_account_management.StudentActivity
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:36:9-38:39
-	android:exported
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:38:13-36
-	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:37:13-44
-activity#com.example.std_account_management.AddStudentActivity
-ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:39:9-41:39
-	android:exported
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:41:13-36
-	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:40:13-47
-activity#com.example.std_account_management.SignIn
 ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:42:9-44:39
 	android:exported
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:43:13-35
-activity#com.example.std_account_management.MainActivity
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:43:13-44
+activity#com.example.std_account_management.AddStudentActivity
 ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:45:9-47:39
 	android:exported
 		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:46:13-41
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:46:13-47
+activity#com.example.std_account_management.SignIn
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:48:9-50:39
+	android:exported
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:50:13-36
+	android:name
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:49:13-35
+activity#com.example.std_account_management.MainActivity
+ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:51:9-53:39
+	android:exported
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:52:13-41
 uses-sdk
 INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml

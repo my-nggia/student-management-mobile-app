@@ -31,7 +31,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnItemSelectedListener, RecyclerViewInterface {
+public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnItemSelectedListener, RecyclerViewInterface, DialogFragment.OnInputListener {
     ArrayList<Student> studentsList = new ArrayList<>();
     String[] listSorting = new String[]{"Sorting by age","Sorting by name from A to Z", "Sorting by name from Z to A" };
     Spinner spinner;
@@ -39,6 +39,7 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
     private FirebaseFirestore DB;
     StudentRecyclerViewAdapter adapter;
     private Toolbar toolbar;
+    private static final String TAG = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,7 +111,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
                     return Integer.compare(o1.getAge(), o2.getAge());
                 }
             });
-            Toast.makeText(this, "Sorting by age", Toast.LENGTH_SHORT).show();
         }
         else if( citeria.equals("Sorting by name from A to Z")) {
             Collections.sort(studentsList, new Comparator<Student>() {
@@ -119,7 +119,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
                     return o1.getName().compareToIgnoreCase(o2.getName());
                 }
             });
-            Toast.makeText(this, "Sorting by name from A to Z", Toast.LENGTH_SHORT).show();
         }
         else if( citeria.equals("Sorting by name from Z to A")) {
             Collections.sort(studentsList, new Comparator<Student>() {
@@ -128,7 +127,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
                     return o2.getName().compareToIgnoreCase(o1.getName());
                 }
             });
-            Toast.makeText(this, "Sorting by name from Z to A", Toast.LENGTH_SHORT).show();
         }
         adapter.notifyDataSetChanged();
     }
@@ -164,11 +162,48 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
     };
 
     // Nhấn giữ để update thông tin sinh viên
+    int updated_user_pos_array_list;
     @Override
     public void onItemLongClick(int position) {
-//        Intent updateStudentInfo = new Intent(ViewAllStudents.this, UpdateStudentInfo.)
+        updated_user_pos_array_list = position;
+        DialogFragment dialog = new DialogFragment();
+        dialog.show(getSupportFragmentManager(), "Dialog");
     }
 
+    @Override
+    public void sendInput(String input) {
+        Toast.makeText(ViewAllStudents.this, input, Toast.LENGTH_SHORT).show();
+        String[] updatedInfo = input.split(",");
+        // name, age, phone
+        sendUpdatedInfoToDB(updatedInfo[0], updatedInfo[1], updatedInfo[2]);
+    }
+
+    private void sendUpdatedInfoToDB(String s, String s1, String s2) {
+        Student st = studentsList.get(updated_user_pos_array_list);
+        // email,  name,  age,  phone,  status,  password
+        Student updatedStd = new Student(st.getEmail().toString(), s, Integer.parseInt(s1), s2, st.getStatus().toString(), st.getPass().toString());
+        DB.collection("student").whereEqualTo("email", st.getEmail()).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        String idDelete = document.getId();
+                        DB.collection("student").document(idDelete).set(updatedStd).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+                                Toast.makeText(ViewAllStudents.this, "Updated Successfully", Toast.LENGTH_SHORT).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(ViewAllStudents.this, "Fail to update in DB", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
 
     // Xóa sinh viên khỏi Database dựa trên email
     private void deleteStudentFromDB(Student delStd) {
@@ -187,7 +222,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(ViewAllStudents.this, "Fail to delete in DB", Toast.LENGTH_SHORT).show();
-
                             }
                         });
                     }
@@ -195,6 +229,7 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
             }
         });
     } // [END] Delete a student from database
+
 
 
 }

@@ -31,6 +31,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Stdaccountmanagement" >
         <activity
+            android:name="com.example.std_account_management.DialogFragment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.std_account_management.update_student_info_dialog"
+            android:exported="false" />
+        <activity
             android:name="com.example.std_account_management.ViewStudentAdminManager"
             android:exported="false" />
         <activity

@@ -21,7 +21,7 @@ public class BaseMenuActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.back_home_screen:
-                Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.menu_add:

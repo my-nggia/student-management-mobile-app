@@ -27,7 +27,7 @@
 18-->[androidx.core:core:1.9.0] /home/gia-my-ng/.gradle/caches/transforms-3/45dba061abe1e5d647d9f295032bd2d4/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:8:5-48:19
+20-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:8:5-54:19
 21        android:allowBackup="true"
 21-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -51,191 +51,203 @@
 32-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:16:9-58
 33        <activity
 33-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:18:9-20:40
-34            android:name="com.example.std_account_management.ViewStudentAdminManager"
-34-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:19:13-52
+34            android:name="com.example.std_account_management.DialogFragment"
+34-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:19:13-43
 35            android:exported="false" />
 35-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:20:13-37
 36        <activity
 36-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:21:9-23:40
-37            android:name="com.example.std_account_management.ViewAllStudents"
-37-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:22:13-44
+37            android:name="com.example.std_account_management.update_student_info_dialog"
+37-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:22:13-55
 38            android:exported="false" />
 38-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:23:13-37
 39        <activity
-39-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:24:9-26:39
-40            android:name="com.example.std_account_management.ManagerActivity"
-40-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:25:13-44
-41            android:exported="true" />
-41-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:26:13-36
+39-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:24:9-26:40
+40            android:name="com.example.std_account_management.ViewStudentAdminManager"
+40-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:25:13-52
+41            android:exported="false" />
+41-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:26:13-37
 42        <activity
-42-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:27:9-35:20
-43            android:name="com.example.std_account_management.AdminActivity"
-43-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:28:13-42
-44            android:exported="true" >
-44-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:29:13-36
-45            <intent-filter>
-45-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:30:13-34:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:31:17-69
-46-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:31:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:33:17-77
-48-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:33:27-74
-49            </intent-filter>
-50        </activity> <!--  -->
-51        <activity
-51-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:36:9-38:39
-52            android:name="com.example.std_account_management.StudentActivity"
-52-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:37:13-44
-53            android:exported="true" />
-53-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:38:13-36
-54        <activity
-54-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:39:9-41:39
-55            android:name="com.example.std_account_management.AddStudentActivity"
-55-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:40:13-47
-56            android:exported="true" />
-56-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:41:13-36
+42-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:27:9-29:40
+43            android:name="com.example.std_account_management.ViewAllStudents"
+43-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:28:13-44
+44            android:exported="false" />
+44-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:29:13-37
+45        <activity
+45-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:30:9-32:39
+46            android:name="com.example.std_account_management.ManagerActivity"
+46-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:31:13-44
+47            android:exported="true" />
+47-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:32:13-36
+48        <activity
+48-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:33:9-41:20
+49            android:name="com.example.std_account_management.AdminActivity"
+49-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:34:13-42
+50            android:exported="true" >
+50-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:35:13-36
+51            <intent-filter>
+51-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:36:13-40:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:37:17-69
+52-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:37:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:39:17-77
+54-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:39:27-74
+55            </intent-filter>
+56        </activity> <!--  -->
 57        <activity
 57-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:42:9-44:39
-58            android:name="com.example.std_account_management.SignIn"
-58-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:43:13-35
-59            android:exported="true" /> <!--  -->
+58            android:name="com.example.std_account_management.StudentActivity"
+58-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:43:13-44
+59            android:exported="true" />
 59-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:44:13-36
 60        <activity
 60-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:45:9-47:39
-61            android:name="com.example.std_account_management.MainActivity"
-61-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:46:13-41
+61            android:name="com.example.std_account_management.AddStudentActivity"
+61-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:46:13-47
 62            android:exported="true" />
 62-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:47:13-36
-63
-64        <service
-64-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:14:9-23:19
-65            android:name="com.google.firebase.components.ComponentDiscoveryService"
-65-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:15:13-84
-66            android:directBootAware="true"
-66-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:32:13-43
-67            android:exported="false" >
-67-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:16:13-37
-68            <meta-data
-68-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:17:13-19:85
-69                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-69-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:18:17-122
-70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:19:17-82
-71            <meta-data
-71-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:20:13-22:85
-72                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-72-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:21:17-111
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:22:17-82
+63        <activity
+63-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:48:9-50:39
+64            android:name="com.example.std_account_management.SignIn"
+64-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:49:13-35
+65            android:exported="true" /> <!--  -->
+65-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:50:13-36
+66        <activity
+66-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:51:9-53:39
+67            android:name="com.example.std_account_management.MainActivity"
+67-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:52:13-41
+68            android:exported="true" />
+68-->/home/gia-my-ng/AndroidStudioProjects/std management/app/src/main/AndroidManifest.xml:53:13-36
+69
+70        <service
+70-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:14:9-23:19
+71            android:name="com.google.firebase.components.ComponentDiscoveryService"
+71-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:15:13-84
+72            android:directBootAware="true"
+72-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+73            android:exported="false" >
+73-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:16:13-37
 74            <meta-data
-74-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/853631cffb0dfb84a35792d241b74847/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
-75                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-75-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/853631cffb0dfb84a35792d241b74847/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+74-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:17:13-19:85
+75                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+75-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:18:17-122
 76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/853631cffb0dfb84a35792d241b74847/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+76-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:19:17-82
 77            <meta-data
-77-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
-78                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-78-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+77-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:20:13-22:85
+78                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+78-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:21:17-111
 79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:37:17-82
-80        </service>
-81
-82        <activity
-82-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-83            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-83-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-84            android:exported="false"
-84-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-85            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-85-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-86
-87        <provider
-87-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
-88            android:name="com.google.firebase.provider.FirebaseInitProvider"
-88-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:24:13-77
-89            android:authorities="com.example.std_account_management.firebaseinitprovider"
-89-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:25:13-72
-90            android:directBootAware="true"
-90-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:26:13-43
-91            android:exported="false"
-91-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:27:13-37
-92            android:initOrder="100" />
-92-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+79-->[com.google.firebase:firebase-firestore:24.9.1] /home/gia-my-ng/.gradle/caches/transforms-3/1bfb389f0a186117718ca823340120a1/transformed/firebase-firestore-24.9.1/AndroidManifest.xml:22:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/853631cffb0dfb84a35792d241b74847/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+81                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+81-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/853631cffb0dfb84a35792d241b74847/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/853631cffb0dfb84a35792d241b74847/transformed/firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+84                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+84-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+86        </service>
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:18.0.1] /home/gia-my-ng/.gradle/caches/transforms-3/abf4871b652474f88ffad1c4bddfd4cc/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+92
 93        <provider
-93-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-94            android:name="androidx.startup.InitializationProvider"
-94-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-95            android:authorities="com.example.std_account_management.androidx-startup"
-95-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-96            android:exported="false" >
-96-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-97            <meta-data
-97-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-98                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-98-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-99                android:value="androidx.startup" />
-99-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-100            <meta-data
-100-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/5b9ac6df61a3234f9a51fca21f225c77/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-101                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-101-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/5b9ac6df61a3234f9a51fca21f225c77/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-102                android:value="androidx.startup" />
-102-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/5b9ac6df61a3234f9a51fca21f225c77/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+93-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+95            android:authorities="com.example.std_account_management.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+97            android:exported="false"
+97-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+98            android:initOrder="100" />
+98-->[com.google.firebase:firebase-common:20.4.2] /home/gia-my-ng/.gradle/caches/transforms-3/51eb42b334691e771d1e321cb2b4384a/transformed/firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+99        <provider
+99-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+100            android:name="androidx.startup.InitializationProvider"
+100-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+101            android:authorities="com.example.std_account_management.androidx-startup"
+101-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+102            android:exported="false" >
+102-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 103            <meta-data
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-104                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+103-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+104-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 105                android:value="androidx.startup" />
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-106        </provider>
-107
-108        <meta-data
-108-->[com.google.android.gms:play-services-basement:18.1.0] /home/gia-my-ng/.gradle/caches/transforms-3/e69ddfd2048d62e013e1c084a9c6ef14/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-109            android:name="com.google.android.gms.version"
-109-->[com.google.android.gms:play-services-basement:18.1.0] /home/gia-my-ng/.gradle/caches/transforms-3/e69ddfd2048d62e013e1c084a9c6ef14/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-110            android:value="@integer/google_play_services_version" />
-110-->[com.google.android.gms:play-services-basement:18.1.0] /home/gia-my-ng/.gradle/caches/transforms-3/e69ddfd2048d62e013e1c084a9c6ef14/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-111
-112        <receiver
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-113            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-114            android:directBootAware="false"
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-115            android:enabled="true"
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-116            android:exported="true"
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-117            android:permission="android.permission.DUMP" >
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-119                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-120            </intent-filter>
-121            <intent-filter>
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-122                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-123            </intent-filter>
+105-->[androidx.emoji2:emoji2:1.2.0] /home/gia-my-ng/.gradle/caches/transforms-3/cda509cc96bd5991df7deaeed19a12fa/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+106            <meta-data
+106-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/5b9ac6df61a3234f9a51fca21f225c77/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+107-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/5b9ac6df61a3234f9a51fca21f225c77/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+108                android:value="androidx.startup" />
+108-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/gia-my-ng/.gradle/caches/transforms-3/5b9ac6df61a3234f9a51fca21f225c77/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+109            <meta-data
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+111                android:value="androidx.startup" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+112        </provider>
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:18.1.0] /home/gia-my-ng/.gradle/caches/transforms-3/e69ddfd2048d62e013e1c084a9c6ef14/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:18.1.0] /home/gia-my-ng/.gradle/caches/transforms-3/e69ddfd2048d62e013e1c084a9c6ef14/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:18.1.0] /home/gia-my-ng/.gradle/caches/transforms-3/e69ddfd2048d62e013e1c084a9c6ef14/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+117
+118        <receiver
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+119            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+120            android:directBootAware="false"
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+121            android:enabled="true"
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+122            android:exported="true"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+123            android:permission="android.permission.DUMP" >
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 124            <intent-filter>
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-125                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+125                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 126            </intent-filter>
 127            <intent-filter>
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-128                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+128                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 129            </intent-filter>
-130        </receiver>
-131    </application>
-132
-133</manifest>
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+131                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+134                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/gia-my-ng/.gradle/caches/transforms-3/fb2914d012e4cbd36bc7d41b8a4dd615/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+135            </intent-filter>
+136        </receiver>
+137    </application>
+138
+139</manifest>

@@ -86,7 +86,6 @@ public class AddStudentActivity extends AppCompatActivity {
                     Intent view_stds_activity = new Intent(AddStudentActivity.this, ViewAllStudents.class);
                     startActivity(view_stds_activity);
                 } catch (Exception e) {
-                    Toast.makeText(AddStudentActivity.this, "!!!! " + e.toString(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
