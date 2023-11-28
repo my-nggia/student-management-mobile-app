@@ -147,13 +147,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
         startActivity(intent);
     }
 
-    // giữ
-    @Override
-    public void onItemLongClick(int position) {
-//        studentsList.remove(position);
-//        adapter.notifyItemRemoved(position);
-    }
-
     // Kéo sang trái để xóa
     ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
         @Override
@@ -164,24 +157,44 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
         @Override
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
             Student del_std = studentsList.get(viewHolder.getAdapterPosition());
-//            deleteStudentFromDB(del_std);
-//            studentsList.remove(viewHolder.getAdapterPosition());
-            Toast.makeText(ViewAllStudents.this, "Deleted" + del_std.getName(), Toast.LENGTH_SHORT).show();
-//            adapter.notifyDataSetChanged();
+            deleteStudentFromDB(del_std);
+            studentsList.remove(viewHolder.getAdapterPosition());
+            adapter.notifyDataSetChanged();
         }
     };
 
+    // Nhấn giữ để update thông tin sinh viên
+    @Override
+    public void onItemLongClick(int position) {
+//        Intent updateStudentInfo = new Intent(ViewAllStudents.this, UpdateStudentInfo.)
+    }
+
+
     // Xóa sinh viên khỏi Database dựa trên email
-//    private void deleteStudentFromDB(Student delStd) {
-//        DB.collection("student").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//            @Override
-//            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                if (task.isSuccessful()) {
-//                    for (QueryDocumentSnapshot d : task.getResult()) {
-//
-//                    }
-//                }
-//            }
-//        });
-//    }
+    private void deleteStudentFromDB(Student delStd) {
+        DB.collection("student").whereEqualTo("email", delStd.getEmail()).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        String idDelete = document.getId();
+                        DB.collection("student").document(idDelete).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+                                Toast.makeText(ViewAllStudents.this, "Deleted in DB", Toast.LENGTH_SHORT).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(ViewAllStudents.this, "Fail to delete in DB", Toast.LENGTH_SHORT).show();
+
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    } // [END] Delete a student from database
+
+
 }

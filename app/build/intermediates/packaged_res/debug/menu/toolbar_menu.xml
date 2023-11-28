@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/back_home_screen"
+        android:title="Home"
+        android:icon="@drawable/baseline_home"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Add A New Student"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_view_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="View All Students"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/import_student_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Import Student List"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/export_student_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Export Student List"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/import_certificate_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Import Certificate List"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/export_certificate_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Export Certificate List"
+        app:showAsAction="never"/>
+
+</menu>

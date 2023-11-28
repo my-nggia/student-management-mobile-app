@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/menu_toolbar_menu.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/menu/toolbar_menu.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_user_img_default.jpg.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/user_img_default.jpg"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_home.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_home.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_view_student_admin_manager.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_view_student_admin_manager.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_add_student_activity.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/add_student_activity.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_sign_in.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_phone.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_phone.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_view_all_students.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_view_all_students.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_custom_input.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/custom_input.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_admin.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/xml_backup_rules.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_person.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_person.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_email.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_email.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_admin_dashboard.jpg.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/admin_dashboard.jpg"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_calendar.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_calendar.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_appbar.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/appbar.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_lock_24.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_lock_24.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_btn_dialog_custom.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/btn_dialog_custom.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_border_radius_8dp_textview.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/border_radius_8dp_textview.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_img_radius_8dp.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/img_radius_8dp.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.std_account_management.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_student_card_row.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/student_card_row.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_groups.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_groups.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_manager.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_manager.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_student.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_student.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_baseline_person_add_white.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/baseline_person_add_white.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/drawable_manager_dashboard.jpg.flat",
+        "source": "com.example.std_account_management.app-main-37:/drawable/manager_dashboard.jpg"
+    }
+]
