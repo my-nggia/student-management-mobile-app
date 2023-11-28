@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="cinder">#B56727</color>
+    <color name="fire_orange">#DD571C</color>
+    <color name="light_dark">#454343</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">std-account-management</string>
+    <string name="gcm_defaultSenderId" translatable="false">390494140660</string>
+    <string name="google_api_key" translatable="false">AIzaSyB34aBr7PdDglxNPcnXeJN1aWzlnZTvzdc</string>
+    <string name="google_app_id" translatable="false">1:390494140660:android:3d998b4d70fd514b1f06a1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB34aBr7PdDglxNPcnXeJN1aWzlnZTvzdc</string>
+    <string name="google_storage_bucket" translatable="false">student-information-mana-a3709.appspot.com</string>
+    <string name="project_id" translatable="false">student-information-mana-a3709</string>
+    <style name="Base.Theme.Stdaccountmanagement" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Stdaccountmanagement" parent="Base.Theme.Stdaccountmanagement"/>
+</resources>

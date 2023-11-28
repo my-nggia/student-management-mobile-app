@@ -58,7 +58,6 @@ public class SignIn extends AppCompatActivity {
                         String db_email = d.getString("email");
                         String db_pass = d.getString("pass");
                         if (db_email.equalsIgnoreCase(email) && db_pass.equalsIgnoreCase(password)) {
-//                            Toast.makeText(SignIn.this, "OK " + email + " --- " + db_email, Toast.LENGTH_SHORT).show();
                             Intent mainActivityStudent = new Intent(getApplicationContext(), StudentActivity.class);
                             mainActivityStudent.putExtra("user_email", db_email.toString());
                             startActivity(mainActivityStudent);
@@ -71,8 +70,6 @@ public class SignIn extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                // if we do not get any data or any error we are displaying
-                // a toast message that we do not get any data
                 Toast.makeText(SignIn.this, "Fail to get the data.", Toast.LENGTH_SHORT).show();
             }
         });
