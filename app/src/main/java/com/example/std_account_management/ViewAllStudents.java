@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -30,11 +32,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 
 public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnItemSelectedListener, RecyclerViewInterface, DialogFragment.OnInputListener {
     ArrayList<Student> studentsList = new ArrayList<>();
+    ArrayList<Student> listSearch = new ArrayList<>();
     String[] listSorting = new String[]{"Sorting by age","Sorting by name from A to Z", "Sorting by name from Z to A" };
     Spinner spinner;
+
+    Button btn_search;
+    EditText ed_NameSearch, ed_AgeSearch;
     int default_img = R.drawable.user_img_default;
     private FirebaseFirestore DB;
     StudentRecyclerViewAdapter adapter;
@@ -59,6 +66,8 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
         spinner.setAdapter(adapterSpinner);
         spinner.setOnItemSelectedListener(ViewAllStudents.this);
 
+
+
         // Recycler View
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
         adapter = new StudentRecyclerViewAdapter(this, studentsList,this);
@@ -69,8 +78,50 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
         setUpStudentsData(adapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        //Search function
+        btn_search = findViewById(R.id.btn_search);
+        ed_NameSearch = findViewById(R.id.search_name);
+        ed_AgeSearch = findViewById(R.id.search_age);
+        btn_search.setOnClickListener(v -> {
+            searchStudent(ed_NameSearch.getText().toString(), ed_AgeSearch.getText().toString());
+        });
     }
 
+    public void searchStudent(String name, String age) {
+        if(name.isEmpty() && age.isEmpty()) {
+            listSearch = studentsList;
+        }
+        else {
+            ArrayList<Student> list = new ArrayList<>();
+            if(name.isEmpty()) {
+                for(Student s : studentsList) {
+                    if(String.valueOf(s.getAge()).contains(age)) {
+                        list.add(s);
+                    }
+                }
+            }
+            else if(age.isEmpty()) {
+                for(Student s : studentsList) {
+                    if(s.getName().toLowerCase().contains(name.toLowerCase())) {
+                        list.add(s);
+                    }
+                }
+            }
+            else {
+                for(Student s : studentsList) {
+                    if(s.getName().toLowerCase().contains(name.toLowerCase()) && String.valueOf(s.getAge()).contains(age)) {
+                        list.add(s);
+                    }
+                }
+            }
+            listSearch = list;
+        }
+        RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
+        adapter = new StudentRecyclerViewAdapter(this, listSearch,this);
+        new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(recyclerView);
+        recyclerView.setAdapter(adapter);
+    }
 
     private void setUpStudentsData(StudentRecyclerViewAdapter adapter) {
         DB.collection("student").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
