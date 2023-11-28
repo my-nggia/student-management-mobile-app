@@ -49,6 +49,47 @@
         android:textColorHint="@color/light_dark"
         android:background="@drawable/custom_input" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your role:"
+        android:textColor="@color/fire_orange"
+        android:layout_gravity="left"
+        android:layout_marginTop="24dp"
+        android:textSize="16dp"
+        />
+    <RadioGroup
+        android:id="@+id/btn_group_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="@color/fire_orange"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manager"
+            android:textColor="@color/fire_orange"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="@color/fire_orange"
+            android:textSize="16dp"/>
+    </RadioGroup>
+
+
+
     <Button
         android:id="@+id/sign_in_btn"
         android:layout_marginTop="50dp"
@@ -56,8 +97,8 @@
         android:layout_height="60dp"
         android:text="Sign In"
         android:textSize="24dp"
-        android:textColor="@color/fire_orange"
-        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/fire_orange"
         />
 
 </LinearLayout>
