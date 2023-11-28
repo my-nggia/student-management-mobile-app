@@ -35,13 +35,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", status='" + status + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", age=" + age +
-                '}';
+        return name + ',' + age + ',' + phone  + ','+ email + ',' + status;
     }
 }

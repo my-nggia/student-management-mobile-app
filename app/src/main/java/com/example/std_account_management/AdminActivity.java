@@ -3,43 +3,42 @@ package com.example.std_account_management;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.ViewConfiguration;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminActivity extends AppCompatActivity {
+public class AdminActivity extends BaseMenuActivity {
     ArrayList<Student> studentsList = new ArrayList<>();
     int default_img = R.drawable.user_img_default;
     private FirebaseFirestore DB;
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
 
-
-//        Toolbar tb = findViewById(R.id.)
+        Toolbar toolbar = findViewById(R.id.admin_toolbar);
+        setSupportActionBar(toolbar);
 
         DB = FirebaseFirestore.getInstance();
 
-//        RecyclerView recyclerView = findViewById(R.id.ad_recycler_view);
-//        StudentRecyclerViewAdapter adapter = new StudentRecyclerViewAdapter(this, studentsList);
-//        recyclerView.setAdapter(adapter);
-//
-//        setUpStudentsData(adapter);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private void setUpStudentsData(StudentRecyclerViewAdapter adapter) {
@@ -61,8 +60,4 @@ public class AdminActivity extends AppCompatActivity {
             }
         });
     }
-
-    // Menu for toolbar
-
-
 }

@@ -8,26 +8,28 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class StudentRecyclerViewAdapter extends RecyclerView.Adapter<StudentRecyclerViewAdapter.MyViewHolder> {
+    private final RecyclerViewInterface recyclerViewInterface;
     Context context;
     ArrayList<Student> students;
-    public StudentRecyclerViewAdapter(Context context, ArrayList<Student> students) {
+    public StudentRecyclerViewAdapter(Context context, ArrayList<Student> students, RecyclerViewInterface recyclerViewInterface) {
         this.context = context;
         this.students = students;
+        this.recyclerViewInterface = recyclerViewInterface;
     }
 
     @NonNull
     @Override
-    public StudentRecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public StudentRecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType ) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.student_card_row, parent, false);
-        return new StudentRecyclerViewAdapter.MyViewHolder(view);
+        return new StudentRecyclerViewAdapter.MyViewHolder(view, recyclerViewInterface);
     }
-
 
     @Override
     public void onBindViewHolder(@NonNull StudentRecyclerViewAdapter.MyViewHolder holder, int position) {
@@ -50,7 +52,7 @@ public class StudentRecyclerViewAdapter extends RecyclerView.Adapter<StudentRecy
     public static class MyViewHolder extends RecyclerView.ViewHolder{
         ImageView imgView;
         TextView tvName, tvAge, tvEmail, tvPhone, tvStatus;
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
             imgView = itemView.findViewById(R.id.std_img_card);
             tvName = itemView.findViewById(R.id.std_name_card);
@@ -58,6 +60,18 @@ public class StudentRecyclerViewAdapter extends RecyclerView.Adapter<StudentRecy
             tvEmail = itemView.findViewById(R.id.std_email_card);
             tvPhone = itemView.findViewById(R.id.std_phone_card);
             tvStatus= itemView.findViewById(R.id.std_status_card);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (recyclerViewInterface != null) {
+                        int pos = getAdapterPosition();
+                        if (pos != RecyclerView.NO_POSITION) {
+                            recyclerViewInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }
