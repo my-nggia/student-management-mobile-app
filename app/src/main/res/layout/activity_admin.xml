@@ -5,9 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AdminActivity"
-    android:background="@color/black">
+    android:background="@color/white">
 
-    <include layout="@layout/toolbar_for_admin"
+    <include layout="@layout/appbar"
         android:id="@+id/admin_toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/admin_dashboard"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

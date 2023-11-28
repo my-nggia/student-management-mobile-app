@@ -82,11 +82,9 @@ public class AddStudentActivity extends AppCompatActivity {
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // trở lại AdminActivity.java / ManagerActivity.java
-                Toast.makeText(AddStudentActivity.this, "Back lại Admin/ Manager", Toast.LENGTH_SHORT).show();
                 try {
-                    Intent manager_activity = new Intent(AddStudentActivity.this, ManagerActivity.class);
-                    startActivity(manager_activity);
+                    Intent view_stds_activity = new Intent(AddStudentActivity.this, ViewAllStudents.class);
+                    startActivity(view_stds_activity);
                 } catch (Exception e) {
                     Toast.makeText(AddStudentActivity.this, "!!!! " + e.toString(), Toast.LENGTH_SHORT).show();
                 }
@@ -132,12 +130,12 @@ public class AddStudentActivity extends AppCompatActivity {
             public void onSuccess(DocumentReference documentReference) {
                 Toast.makeText(AddStudentActivity.this, "Add Student Successfully", Toast.LENGTH_SHORT).show();
                 // Add thành công, chuyển sang về ManagerActivity
-                try {
-                    Intent manager_activity = new Intent(AddStudentActivity.this, ManagerActivity.class);
-                    startActivity(manager_activity);
-                } catch (Exception e) {
-                    Toast.makeText(AddStudentActivity.this, "!!!! " + e.toString(), Toast.LENGTH_SHORT).show();
-                }
+//                try {
+//                    Intent manager_activity = new Intent(AddStudentActivity.this, ManagerActivity.class);
+//                    startActivity(manager_activity);
+//                } catch (Exception e) {
+//                    Toast.makeText(AddStudentActivity.this, "!!!! " + e.toString(), Toast.LENGTH_SHORT).show();
+//                }
 
             }
         }).addOnFailureListener(new OnFailureListener() {
