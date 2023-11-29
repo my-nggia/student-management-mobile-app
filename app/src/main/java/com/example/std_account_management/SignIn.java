@@ -105,7 +105,6 @@ public class SignIn extends AppCompatActivity {
                                         String db_pass = d.getString("pass");
                                         if (db_email.equalsIgnoreCase(email) && db_pass.equalsIgnoreCase(password)) {
                                             addLoginTime(db_email); // tăng số lần đăng nhập của người dùng tương ứng vói email
-                                            Toast.makeText(SignIn.this, "OK " + email + " --- " + db_email, Toast.LENGTH_SHORT).show();
                                             Intent mainActivityStudent = new Intent(getApplicationContext(), StudentActivity.class);
                                             mainActivityStudent.putExtra("user_email", db_email.toString());
                                             startActivity(mainActivityStudent);

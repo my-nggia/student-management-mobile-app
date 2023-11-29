@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/back_home_screen"
+        android:id="@+id/sign_out_icon"
         android:title="Home"
-        android:icon="@drawable/baseline_home"
+        android:icon="@drawable/baseline_logout"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/menu_add"
@@ -18,6 +18,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="View All Students"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_view_certificates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="View All Certificates"
         app:showAsAction="never"/>
 
     <item

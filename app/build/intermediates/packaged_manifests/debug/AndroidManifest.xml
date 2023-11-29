@@ -31,6 +31,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.Stdaccountmanagement" >
         <activity
+            android:name="com.example.std_account_management.ViewCertificates"
+            android:exported="true" >
+        </activity>
+        <activity
             android:name="com.example.std_account_management.DialogFragment"
             android:exported="false" />
         <activity
@@ -44,8 +48,7 @@
             android:exported="true" />
         <activity
             android:name="com.example.std_account_management.AdminActivity"
-            android:exported="true" >
-        </activity> <!--  -->
+            android:exported="true" /> <!--  -->
         <activity
             android:name="com.example.std_account_management.StudentActivity"
             android:exported="true" />

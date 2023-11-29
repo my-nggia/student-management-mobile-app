@@ -11,6 +11,7 @@ drawable baseline_email
 drawable baseline_groups
 drawable baseline_home
 drawable baseline_lock_24
+drawable baseline_logout
 drawable baseline_person
 drawable baseline_person_add_white
 drawable baseline_phone
@@ -30,13 +31,15 @@ drawable user_img_default
 id add_btn
 id admin_toolbar
 id age_update
-id back_home_screen
 id btn_admin
 id btn_group_role
 id btn_manager
 id btn_search
 id btn_user
 id cancel_add_btn
+id cert_name_card
+id cert_provider_card
+id cert_valid_card
 id date_tv
 id email_sign_in
 id email_sign_up
@@ -49,9 +52,11 @@ id linearLayout
 id mRecyclerVew
 id mRecyclerView
 id menu_add
+id menu_view_certificates
 id menu_view_students
 id my_app_bar
 id my_recycler_view
+id my_recycler_view_cert
 id name_sign_up
 id name_update
 id password_sign_in
@@ -61,6 +66,7 @@ id phone_update
 id search_age
 id search_name
 id sign_in_btn
+id sign_out_icon
 id sign_out_std
 id spinner
 id std_age
@@ -84,6 +90,8 @@ id update_btn
 id update_cancel_btn
 id user_img
 id username_std
+id view_cert_mn
+id view_cert_std
 layout activity_admin
 layout activity_dialog_fragment
 layout activity_main
@@ -91,9 +99,11 @@ layout activity_manager
 layout activity_sign_in
 layout activity_student
 layout activity_view_all_students
+layout activity_view_certificates
 layout activity_view_student_admin_manager
 layout add_student_activity
 layout appbar
+layout certificate_card_row
 layout student_card_row
 menu toolbar_menu
 mipmap ic_launcher

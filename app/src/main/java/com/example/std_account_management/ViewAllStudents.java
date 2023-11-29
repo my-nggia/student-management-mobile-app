@@ -46,7 +46,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
     private FirebaseFirestore DB;
     StudentRecyclerViewAdapter adapter;
     private Toolbar toolbar;
-    private static final String TAG = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

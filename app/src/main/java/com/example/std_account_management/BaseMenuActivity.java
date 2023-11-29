@@ -20,8 +20,9 @@ public class BaseMenuActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.back_home_screen:
-//                Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+            case R.id.sign_out_icon:
+                Intent signin = new Intent(getApplicationContext(), SignIn.class);
+                startActivity(signin);
                 break;
 
             case R.id.menu_add:
@@ -52,6 +53,12 @@ public class BaseMenuActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Export Certificate List", Toast.LENGTH_SHORT).show();
 //                exportCertificateList();
                 break;
+            case R.id.menu_view_certificates:
+                Intent cert = new Intent(getApplicationContext(), ViewCertificates.class);
+                cert.putExtra("std_email_cert", "manager@gmail.com");
+                startActivity(cert);
+                break;
+
         }
         return true;
     }
