@@ -31,6 +31,11 @@ id add_btn
 id admin_toolbar
 id age_update
 id back_home_screen
+id btn_admin
+id btn_group_role
+id btn_manager
+id btn_search
+id btn_user
 id cancel_add_btn
 id date_tv
 id email_sign_in
@@ -53,7 +58,10 @@ id password_sign_in
 id password_sign_up
 id phone_sign_up
 id phone_update
+id search_age
+id search_name
 id sign_in_btn
+id sign_out_std
 id spinner
 id std_age
 id std_age_card
@@ -62,6 +70,7 @@ id std_email
 id std_email_card
 id std_email_view
 id std_img_card
+id std_login_times
 id std_login_times_view
 id std_name
 id std_name_card

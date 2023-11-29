@@ -15,7 +15,10 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -101,7 +104,8 @@ public class SignIn extends AppCompatActivity {
                                         String db_email = d.getString("email");
                                         String db_pass = d.getString("pass");
                                         if (db_email.equalsIgnoreCase(email) && db_pass.equalsIgnoreCase(password)) {
-                                            //Toast.makeText(SignIn.this, "OK " + email + " --- " + db_email, Toast.LENGTH_SHORT).show();
+                                            addLoginTime(db_email); // tăng số lần đăng nhập của người dùng tương ứng vói email
+                                            Toast.makeText(SignIn.this, "OK " + email + " --- " + db_email, Toast.LENGTH_SHORT).show();
                                             Intent mainActivityStudent = new Intent(getApplicationContext(), StudentActivity.class);
                                             mainActivityStudent.putExtra("user_email", db_email.toString());
                                             startActivity(mainActivityStudent);
@@ -125,6 +129,36 @@ public class SignIn extends AppCompatActivity {
                     }
                 });
     }
+
+    private void addLoginTime(String dbEmail) {
+        DB.collection("student").whereEqualTo("email", dbEmail).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        String stdId = document.getId();
+
+                        DocumentReference dRef = DB.collection("student").document(stdId);
+                        dRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                            @Override
+                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                DocumentSnapshot docSnapShot = task.getResult();
+                                Student std_login_count = new Student();
+                                std_login_count = docSnapShot.toObject(Student.class);
+                                std_login_count.setLoginTimes(std_login_count.getLoginTimes() + 1);
+                                DB.collection("student").document(stdId).set(std_login_count);
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+    }
+
+
+
+
 
     private boolean isEmptyField(String email, String password) {
         if (TextUtils.isEmpty(email)) {

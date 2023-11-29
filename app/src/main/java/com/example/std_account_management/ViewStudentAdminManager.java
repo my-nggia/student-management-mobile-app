@@ -31,8 +31,8 @@ public class ViewStudentAdminManager extends AppCompatActivity {
         phone_tv.setText("Phone: " + std_info[2]);
         email_tv.setText("Email: " + std_info[3]);
         status_tv.setText("Status: " + std_info[4]);
-//        login_tv.setText("Number of logins: " +std_info[5]);
-        login_tv.setText("Number of logins: " + "<????>");
+        login_tv.setText("Number of logins: " +std_info[5]);
+//        login_tv.setText("Number of logins: " + "<????>");
 
     }
 }

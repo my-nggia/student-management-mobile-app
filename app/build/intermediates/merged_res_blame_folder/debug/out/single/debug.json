@@ -52,12 +52,12 @@
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_baseline_person_add_white.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_person_add_white.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -88,10 +88,6 @@
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_dialog_fragment.xml.flat",
-        "source": "com.example.std_account_management.app-main-37:/layout/activity_dialog_fragment.xml"
-    },
-    {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_activity_student.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/activity_student.xml"
     },
@@ -120,12 +116,12 @@
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/baseline_person.xml"
     },
     {
-        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_bg_fire_orange_corner_10.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/drawable/bg_fire_orange_corner_10.xml"
+    },
+    {
+        "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/drawable_btn_dialog_custom.xml.flat",
@@ -194,5 +190,9 @@
     {
         "merged": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-merged_res-35:/layout_student_card_row.xml.flat",
         "source": "/home/gia-my-ng/.gradle/daemon/8.0/com.example.std_account_management.app-main-37:/layout/student_card_row.xml"
+    },
+    {
+        "merged": "com.example.std_account_management.app-merged_res-35:/layout_activity_student.xml.flat",
+        "source": "com.example.std_account_management.app-main-37:/layout/activity_student.xml"
     }
 ]
