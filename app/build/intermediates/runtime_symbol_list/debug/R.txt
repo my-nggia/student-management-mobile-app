@@ -2964,6 +2964,7 @@ int drawable baseline_email 0x7f07007c
 int drawable baseline_groups 0x7f07007d
 int drawable baseline_home 0x7f07007e
 int drawable baseline_lock_24 0x7f07007f
+int drawable baseline_logout 0x7f070109
 int drawable baseline_person 0x7f070080
 int drawable baseline_person_add_white 0x7f070081
 int drawable baseline_phone 0x7f070082
@@ -3193,7 +3194,6 @@ int id auto 0x7f080058
 int id autoComplete 0x7f080059
 int id autoCompleteToEnd 0x7f08005a
 int id autoCompleteToStart 0x7f08005b
-int id back_home_screen 0x7f08005c
 int id barrier 0x7f08005d
 int id baseline 0x7f08005e
 int id beginOnFirstDraw 0x7f08005f
@@ -3221,6 +3221,9 @@ int id centerCrop 0x7f080074
 int id centerInside 0x7f080075
 int id center_horizontal 0x7f080076
 int id center_vertical 0x7f080077
+int id cert_name_card 0x7f08022d
+int id cert_provider_card 0x7f080230
+int id cert_valid_card 0x7f080231
 int id chain 0x7f080078
 int id chain2 0x7f080079
 int id chains 0x7f08007a
@@ -3392,6 +3395,7 @@ int id material_timepicker_view 0x7f08011f
 int id material_value_index 0x7f080120
 int id matrix 0x7f080121
 int id menu_add 0x7f080122
+int id menu_view_certificates 0x7f080232
 int id menu_view_students 0x7f080123
 int id message 0x7f080124
 int id middle 0x7f080125
@@ -3429,6 +3433,7 @@ int id mtrl_view_tag_bottom_padding 0x7f080144
 int id multiply 0x7f080145
 int id my_app_bar 0x7f080146
 int id my_recycler_view 0x7f080147
+int id my_recycler_view_cert 0x7f08022e
 int id name_sign_up 0x7f080148
 int id name_update 0x7f080149
 int id navigation_bar_item_active_indicator_view 0x7f08014a
@@ -3533,6 +3538,7 @@ int id showCustom 0x7f0801ac
 int id showHome 0x7f0801ad
 int id showTitle 0x7f0801ae
 int id sign_in_btn 0x7f0801af
+int id sign_out_icon 0x7f080233
 int id sign_out_std 0x7f08022c
 int id sin 0x7f0801b0
 int id skipCollapsed 0x7f0801b1
@@ -3640,6 +3646,8 @@ int id useLogo 0x7f080215
 int id user_img 0x7f080216
 int id username_std 0x7f080217
 int id vertical_only 0x7f080218
+int id view_cert_mn 0x7f080234
+int id view_cert_std 0x7f08022f
 int id view_offset_helper 0x7f080219
 int id view_transition 0x7f08021a
 int id view_tree_lifecycle_owner 0x7f08021b
@@ -3780,9 +3788,11 @@ int layout activity_manager 0x7f0b001f
 int layout activity_sign_in 0x7f0b0020
 int layout activity_student 0x7f0b0021
 int layout activity_view_all_students 0x7f0b0022
+int layout activity_view_certificates 0x7f0b0074
 int layout activity_view_student_admin_manager 0x7f0b0023
 int layout add_student_activity 0x7f0b0024
 int layout appbar 0x7f0b0025
+int layout certificate_card_row 0x7f0b0075
 int layout custom_dialog 0x7f0b0026
 int layout design_bottom_navigation_item 0x7f0b0027
 int layout design_bottom_sheet_dialog 0x7f0b0028

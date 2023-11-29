@@ -117,7 +117,15 @@
 
     </LinearLayout>
 
-
+    <Button
+        android:id="@+id/view_cert_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="View Your Certificates"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/fire_orange"
+        android:textStyle="bold"/>
 
 
 </LinearLayout>

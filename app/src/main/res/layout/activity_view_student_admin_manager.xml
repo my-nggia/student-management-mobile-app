@@ -95,5 +95,17 @@
             android:textSize="18dp" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/view_cert_mn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/fire_orange"
+        android:text="View Student Certificates"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

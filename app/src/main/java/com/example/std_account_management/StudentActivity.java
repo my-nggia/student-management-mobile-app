@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,7 @@ public class StudentActivity extends AppCompatActivity {
     TextView std_name, std_age, std_phone, std_email, username_std, std_log_times, sign_out_std;
     ImageView user_img;
     FirebaseFirestore DB;
+    Button view_cer_std;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ public class StudentActivity extends AppCompatActivity {
         user_img = findViewById(R.id.user_img);
         std_log_times = findViewById(R.id.std_login_times);
         sign_out_std = findViewById(R.id.sign_out_std);
+        view_cer_std = findViewById(R.id.view_cert_std);
 
         // Nhận email từ sign in activity
         Intent emailFromSignIn = getIntent();
@@ -52,6 +55,17 @@ public class StudentActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        view_cer_std.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(StudentActivity.this, ViewCertificates.class);
+                it.putExtra("std_email_cert", user_email);
+                startActivity(it);
+            }
+        });
+
+
 
     }
 
