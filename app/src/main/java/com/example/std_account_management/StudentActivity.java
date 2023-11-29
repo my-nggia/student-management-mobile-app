@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,7 +19,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.List;
 
 public class StudentActivity extends AppCompatActivity {
-    TextView std_name, std_age, std_phone, std_email, username_std;
+    TextView std_name, std_age, std_phone, std_email, username_std, std_log_times, sign_out_std;
     ImageView user_img;
     FirebaseFirestore DB;
     @Override
@@ -34,6 +35,8 @@ public class StudentActivity extends AppCompatActivity {
         std_email = findViewById(R.id.std_email);
         username_std = findViewById(R.id.username_std);
         user_img = findViewById(R.id.user_img);
+        std_log_times = findViewById(R.id.std_login_times);
+        sign_out_std = findViewById(R.id.sign_out_std);
 
         // Nhận email từ sign in activity
         Intent emailFromSignIn = getIntent();
@@ -41,6 +44,14 @@ public class StudentActivity extends AppCompatActivity {
 
         // Query dựa trên thuộc tính (field) "email"
         getStudentInfo(user_email);
+
+        sign_out_std.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(StudentActivity.this, SignIn.class);
+                startActivity(i);
+            }
+        });
 
     }
 
@@ -79,5 +90,6 @@ public class StudentActivity extends AppCompatActivity {
         std_email.setText("Email: " + std.getEmail());
         std_phone.setText("Phone: " + std.getPhone());
         std_age.setText("Age: " + std.getAge());
+        std_log_times.setText("Number of logins: " + String.valueOf(std.getLoginTimes()));
     }
 }

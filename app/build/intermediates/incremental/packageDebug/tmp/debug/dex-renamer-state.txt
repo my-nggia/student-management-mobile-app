@@ -1,8 +1,8 @@
-#Tue Nov 28 14:12:18 ICT 2023
-base.0=/home/gia-my-ng/AndroidStudioProjects/std management/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/home/gia-my-ng/AndroidStudioProjects/std management/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/home/gia-my-ng/AndroidStudioProjects/std management/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
-base.3=/home/gia-my-ng/AndroidStudioProjects/std management/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Wed Nov 29 13:06:31 ICT 2023
+base.0=/home/gia-my-ng/AndroidStudioProjects/student management/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/gia-my-ng/AndroidStudioProjects/student management/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/gia-my-ng/AndroidStudioProjects/student management/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+base.3=/home/gia-my-ng/AndroidStudioProjects/student management/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=7/classes.dex

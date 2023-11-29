@@ -19,9 +19,6 @@
             android:name=".DialogFragment"
             android:exported="false" />
         <activity
-            android:name=".update_student_info_dialog"
-            android:exported="false" />
-        <activity
             android:name=".ViewStudentAdminManager"
             android:exported="false" />
         <activity
@@ -33,11 +30,7 @@
         <activity
             android:name=".AdminActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity> <!--  -->
         <activity
             android:name=".StudentActivity"
@@ -47,7 +40,14 @@
             android:exported="true" />
         <activity
             android:name=".SignIn"
-            android:exported="true" /> <!--  -->
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

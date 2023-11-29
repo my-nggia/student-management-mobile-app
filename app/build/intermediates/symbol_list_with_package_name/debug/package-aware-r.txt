@@ -3206,6 +3206,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_admin
+id btn_group_role
+id btn_manager
+id btn_search
+id btn_user
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3507,6 +3512,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search_age
 id search_badge
 id search_bar
 id search_button
@@ -3514,6 +3520,7 @@ id search_close_btn
 id search_edit_frame
 id search_go_btn
 id search_mag_icon
+id search_name
 id search_plate
 id search_src_text
 id search_voice_btn
@@ -3527,6 +3534,7 @@ id showCustom
 id showHome
 id showTitle
 id sign_in_btn
+id sign_out_std
 id sin
 id skipCollapsed
 id skipped
@@ -3562,6 +3570,7 @@ id std_email
 id std_email_card
 id std_email_view
 id std_img_card
+id std_login_times
 id std_login_times_view
 id std_name
 id std_name_card

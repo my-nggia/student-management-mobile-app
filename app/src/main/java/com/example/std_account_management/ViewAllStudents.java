@@ -57,7 +57,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
         Toolbar toolbar = findViewById(R.id.my_app_bar);
         setSupportActionBar(toolbar);
 
-
         //Spinner sorting
         spinner = findViewById(R.id.spinner);
         // Adapter for spinner sorting
@@ -65,8 +64,6 @@ public class ViewAllStudents extends BaseMenuActivity implements AdapterView.OnI
         adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapterSpinner);
         spinner.setOnItemSelectedListener(ViewAllStudents.this);
-
-
 
         // Recycler View
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
